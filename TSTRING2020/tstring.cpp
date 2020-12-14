@@ -83,7 +83,7 @@ const char& TString::operator[]( size_t n ) const {
     throw out_of_range("In TString::operator[] argument out of scope");
 }
 
-TString::erase(){
+char *TString::erase(){
     while ( ! s.empty() ){
         cout << s <<endl;
         s.erase(ptr);
